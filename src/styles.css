@@ -1,0 +1,168 @@
+/* Overall layout */
+.content {
+    width: 80vw;
+    height: 80vh;
+    background-color: #f4f4f4;
+    margin: 2rem auto;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.project-btn {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-btn:hover {
+    background-color: #45a049;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.project-list li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Todos section */
+.todos {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todos-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.add-todo {
+    text-align: right;
+}
+
+.task-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-btn:hover {
+    background-color: #1976d2;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-left: 5px solid #ffc107; 
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.title-div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    width: 100%;                  
+    margin-bottom: 0.5rem;
+}
+
+.title-div .title {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    padding: 0.2rem 0.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0; 
+    margin-left: 1rem; 
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.description, .dueDate {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 2px 0; 
+}
+
+/* Dialogs */
+dialog {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.dialog-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

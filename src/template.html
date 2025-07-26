@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <h3>Projects</h3>
+            <button class="project-btn">Add project</button>
+
+            <ul class="project-list">
+
+            </ul>
+        </div>
+
+        <div class="todos">
+            <div class="todos-div">
+                <ul class="todos-list">
+
+                </ul>
+            </div>
+
+            <div class="add-todo">
+                <button class="task-btn">Add task</button>
+            </div>
+        </div>
+    </div>
+
+    <dialog class="project-dialog">
+        <form method="dialog">
+            <label for="project-name">Project Name:</label>
+            <input id="project-name" type="text" required />
+            <div class="dialog-buttons">
+                <button type="submit">Add</button>
+                <button type="button" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog class="task-dialog">
+        <form method="dialog" id="task-form">
+            <label for="task-title">Title:</label>
+            <input id="task-title" type="text" required />
+
+            <label for="description">Description:</label>
+            <input id="description" type="text" />
+
+            <label for="due-date">Due:</label>
+            <input id="due-date" type="date" name="due" />
+
+            <fieldset>
+                <legend>Priority:</legend>
+
+                <div>
+                    <input type="radio" id="low" name="priority" value="!">
+                    <label for="low">!</label>
+                </div>
+                <div>
+                    <input type="radio" id="med" name="priority" value="!!">
+                    <label for="med">!!</label>
+                </div>
+                <div>
+                    <input type="radio" id="high" name="priority" value="!!!">
+                    <label for="high">!!!</label>
+                </div>
+            </fieldset>
+            <button type="submit">Add</button>
+            <button type="button" class="task-cancel-btn">Cancel</button>
+        </form>
+    </dialog>
+
+    <dialog class="edit-todo-dialog">
+        <form method="dialog">
+            <label>Title: <input id="edit-title" type="text" /></label>
+            <label>Description: <input id="edit-description" type="text" /></label>
+            <label>Due: <input id="edit-due" type="date" /></label>
+            <fieldset>
+            <legend>Priority:</legend>
+            <label><input type="radio" name="edit-priority" value="!" />!</label>
+            <label><input type="radio" name="edit-priority" value="!!" />!!</label>
+            <label><input type="radio" name="edit-priority" value="!!!" />!!!</label>
+            </fieldset>
+            <button type="submit">Save</button>
+            <button type="button" class="edit-cancel-btn">Cancel</button>
+        </form>
+    </dialog>
+</body>
+</html>
